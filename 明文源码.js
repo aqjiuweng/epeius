@@ -743,6 +743,7 @@ async function get特洛伊Config(password, hostName, sub, UA, RproxyIP, _url, f
 				return randomIP.join('.');
 			}
 			addresses = addresses.concat('127.0.0.1:1234#CFnat');
+			let counter = 1;
 			const randomPorts = httpsPorts.concat('443');
 			addresses = addresses.concat(
 				cfips.map(cidr => generateRandomIPFromCIDR(cidr) + ':' + randomPorts[Math.floor(Math.random() * randomPorts.length)] + '#CF随机节点' + String(counter++).padStart(2, '0'))
