@@ -5,7 +5,7 @@
 - **自制优选**订阅视频教程：https://youtu.be/jOhq3QpXG_I *折腾自己的专属订阅*
 - **进阶使用**技巧视频教程：https://youtu.be/0Cd8uTNJj1Q *然后成为折腾的王*
 
-Telegram交流群：[@CMLiussss](https://t.me/CMLiussss)，**感谢[Alice Networks](https://url.cmliussss.com/alice)提供的云服务器维持[CM订阅转换服务](https://sub.cmliussss.com/)！**
+Telegram交流群：[@CMLiussss](https://t.me/CMLiussss)
 
 ## ⚠️ 免责声明
 
@@ -264,5 +264,16 @@ Telegram交流群：[@CMLiussss](https://t.me/CMLiussss)，**感谢[Alice Networ
 ### MacOS
    - clash.meta（[FlClash](https://github.com/chen08209/FlClash)，[mihomo-party](https://github.com/mihomo-party-org/mihomo-party)）
 
-# 🙏 感谢
-[ca110us](https://github.com/ca110us/epeius)、[xream](https://github.com/xream)、[3Kmfi6HP](https://github.com/6Kmfi6HP/EDtunnel)、[zizifn](https://github.com/zizifn/edgetunnel)、[emn178](https://github.com/emn178/js-sha256)、[ACL4SSR](https://github.com/ACL4SSR/ACL4SSR/tree/master/Clash/config)、[SHIJS1999](https://github.com/SHIJS1999/cloudflare-worker-vless-ip)、<a href="https://url.cmliussss.com/alice"><img src="https://alicenetworks.net/templates/lagom2/assets/img/logo/logo_big.194980063.png" width="150" height="75" alt="Alice Networks LTD"/></a>、
+
+# 🙏 特别鸣谢
+### 💖 赞助支持 - 提供云服务器维持[订阅转换服务](https://sub.cmliussss.net/)
+- [Alice Networks LTD](https://url.cmliussss.com/alice)
+- [VTEXS Enterprise Cloud](https://console.vtexs.com/?affid=1532)
+### 🛠 开源代码引用
+- [ca110us](https://github.com/ca110us/epeius)
+- [xream](https://github.com/xream)
+- [zizifn](https://github.com/zizifn/edgetunnel)
+- [3Kmfi6HP](https://github.com/6Kmfi6HP/EDtunnel)
+- [emn178](https://github.com/emn178/js-sha256)
+- [ACL4SSR](https://github.com/ACL4SSR/ACL4SSR/tree/master/Clash/config)
+- [SHIJS1999](https://github.com/SHIJS1999/cloudflare-worker-vless-ip)
