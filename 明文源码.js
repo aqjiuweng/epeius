@@ -201,8 +201,8 @@ export default {
 						const base64Regex = /^(?:[A-Z0-9+/]{4})*(?:[A-Z0-9+/]{2}==|[A-Z0-9+/]{3}=)?$/i;
 						if (base64Regex.test(userPassword) && !userPassword.includes(':')) userPassword = atob(userPassword);
 						socks5Address = `${userPassword}@${socks5Address.split('@')[1]}`;
-						go2Socks5s = ['all in'];
 					}
+					go2Socks5s = ['all in'];
 				}
 
 				if (socks5Address) {
@@ -440,7 +440,7 @@ async function handleTCPOutBound(remoteSocket, addressRemote, portRemote, rawCli
 				proxyIP = proxyIP.split(':')[0] || proxyIP;
 			}
 			if (proxyIP.includes('.tp')) portRemote = proxyIP.split('.tp')[1].split('.')[0] || portRemote;
-			tcpSocket = await connectAndWrite(proxyIP || addressRemote, portRemote);
+			tcpSocket = await connectAndWrite(proxyIP.toLowerCase() || addressRemote, portRemote);
 		}
 		tcpSocket.closed.catch((error) => {
 			console.log("retry tcpSocket closed error", error);
