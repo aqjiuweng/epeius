@@ -161,8 +161,9 @@ Telegram交流群：[@CMLiussss](https://t.me/CMLiussss)
 | PASSWORD | `auto` | 可以取任意值 |
 | SCV | `false`或`0` | 是否跳过TLS证书验证(默认`true`开启跳过证书验证) |
 | PROXYIP | `proxyip.cmliussss.net:443` | 备选作为访问CFCDN站点的代理节点(支持多ProxyIP, ProxyIP之间使用`,`或`换行`作间隔) |
-| SOCKS5  | `user:password@127.0.0.1:1080` | 优先作为访问CFCDN站点的SOCKS5代理(支持多socks5, socks5之间使用`,`或`换行`作间隔) |
-| GO2SOCKS5  | `blog.cmliussss.com`,`*.ip111.cn`,`*google.com` | 设置`SOCKS5`变量之后，可设置强制使用socks5访问名单(`*`可作为通配符，`换行`作多元素间隔) |
+| HTTP  | `user:password@127.0.0.1:8080`或`127.0.0.1:8080` | 优先作为访问CFCDN站点的HTTP代理(支持多HTTP代理之间使用`,`或`换行`作间隔) |
+| SOCKS5  | `user:password@127.0.0.1:1080`或`127.0.0.1:1080` | 优先作为访问CFCDN站点的SOCKS5代理(支持多socks5, socks5之间使用`,`或`换行`作间隔) |
+| GO2SOCKS5  | `blog.cmliussss.com`,`*.ip111.cn`,`*google.com` | 设置`SOCKS5`或`HTTP`变量之后，可设置强制使用socks5访问名单(设置为`*`可作为全局代理) |
 | ADD | `www.csgo.com:2087`,`icook.hk` | 本地优选域名/优选IP(支持多元素之间`,`或`换行`作间隔) |
 | ADDAPI | [https://raw.github.../addressesapi.txt](https://raw.githubusercontent.com/cmliu/WorkerVless2sub/main/addressesapi.txt) | 不解释, 懂得都懂 |
 | ADDCSV | [https://raw.github.../addressescsv.csv](https://raw.githubusercontent.com/cmliu/WorkerVless2sub/main/addressescsv.csv) | 不解释, 懂得都懂 |
@@ -243,6 +244,11 @@ Telegram交流群：[@CMLiussss](https://t.me/CMLiussss)
    /socks5://user:password@127.0.0.1:1080 (默认激活全局SOCKS5)
    ```
 
+- 指定 `HTTP代理` 案例
+   ```url
+   /http://user:password@127.0.0.1:8080 (默认激活全局SOCKS5)
+   ```
+
 5. **当你的`ADDAPI`可作为`PROXYIP`时，可在`ADDAPI`变量末位添加`?proxyip=true`，即可在生成节点时使用优选IP自身作为`PROXYIP`**
 - 指定 `ADDAPI` 作为 `PROXYIP` 案例
    ```url
@@ -278,3 +284,4 @@ Telegram交流群：[@CMLiussss](https://t.me/CMLiussss)
 - [emn178](https://github.com/emn178/js-sha256)
 - [ACL4SSR](https://github.com/ACL4SSR/ACL4SSR/tree/master/Clash/config)
 - [SHIJS1999](https://github.com/SHIJS1999/cloudflare-worker-vless-ip)
+- [股神](https://t.me/CF_NAT/38885)
